@@ -80,3 +80,12 @@ or
 ```git
 git clone -b <branchname> --single-branch <remote-repo-url>
 ```
+
+### Fetching all branches
+```git
+To fetch all branches from the remote, you can use: git fetch --all
+Checking out remote branches locally:
+for branch in `git branch -r | grep -v HEAD`;do
+    git checkout -b $branch $branch
+done
+```
