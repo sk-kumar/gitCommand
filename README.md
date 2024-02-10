@@ -62,3 +62,21 @@ _A list of commonly used Git commands_
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch}` | Preview changes before merging |
+
+### How to Clone a Specific Branch
+  ### Option One
+```git
+git clone --branch <branchname> <remote-repo-url>
+```
+or
+```git
+git clone -b <branchname> <remote-repo-url>
+```
+  ### Option Two
+```git
+git clone --branch <branchname> --single-branch <remote-repo-url>
+```
+or
+```git
+git clone -b <branchname> --single-branch <remote-repo-url>
+```
